@@ -1,0 +1,155 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath D:\learn\qsb-cli-dev
+3 verbose session 5c82e311e583c620
+4 verbose user-agent lerna/4.0.0/node@v12.17.0+x64 (win32)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '4.0.0' }
+6 verbose rootPath D:\learn\qsb-cli-dev
+7 info current version 1.0.6
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch main
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "v1.0.6-1-gddb531e" => {"lastTagName":"v1.0.6","lastVersion":"v1.0.6","refCount":"1","sha":"ddb531e","isDirty":false}
+18 info Looking for changed packages since v1.0.6
+19 silly checking diff packages/core
+20 silly found diff in packages/core/lib/index.js
+20 silly found diff in packages/core/package.json
+21 verbose filtered diff [ 'packages/core/lib/index.js', 'packages/core/package.json' ]
+22 silly checking diff packages/utils
+23 silly found diff in packages/utils/package.json
+24 verbose filtered diff [ 'packages/utils/package.json' ]
+25 verbose updated @qsb-cli-dev/core
+26 verbose updated @qsb-cli-dev/utils
+27 verbose git-describe undefined => "v1.0.6-1-gddb531e"
+28 silly git-describe parsed => {"lastTagName":"v1.0.6","lastVersion":"v1.0.6","refCount":"1","sha":"ddb531e","isDirty":false}
+29 info execute Skipping releases
+30 silly lifecycle No script for "preversion" in "qsb-cli-dev", continuing
+31 silly lifecycle No script for "preversion" in "@qsb-cli-dev/core", continuing
+32 silly lifecycle No script for "preversion" in "@qsb-cli-dev/utils", continuing
+33 silly lifecycle No script for "version" in "@qsb-cli-dev/core", continuing
+34 silly lifecycle No script for "version" in "@qsb-cli-dev/utils", continuing
+35 silly lifecycle No script for "version" in "qsb-cli-dev", continuing
+36 silly gitAdd [
+36 silly gitAdd   'packages/core/package.json',
+36 silly gitAdd   'packages/utils/package.json',
+36 silly gitAdd   'lerna.json'
+36 silly gitAdd ]
+37 silly gitCommit v1.0.7
+38 verbose git [ 'commit', '-m', 'v1.0.7' ]
+39 silly gitTag v1.0.7
+40 verbose git [ 'tag', 'v1.0.7', '-m', 'v1.0.7' ]
+41 silly lifecycle No script for "postversion" in "@qsb-cli-dev/core", continuing
+42 silly lifecycle No script for "postversion" in "@qsb-cli-dev/utils", continuing
+43 silly lifecycle No script for "postversion" in "qsb-cli-dev", continuing
+44 info git Pushing tags...
+45 silly gitPush origin main
+46 info publish Publishing packages to npm...
+47 notice Skipping all user and access validation due to third-party registry
+48 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+49 silly getCurrentSHA
+50 verbose getCurrentSHA ec0968087ffe924630ee32798fb35d94a0c3a792
+51 silly lifecycle No script for "prepublish" in "qsb-cli-dev", continuing
+52 silly lifecycle No script for "prepare" in "qsb-cli-dev", continuing
+53 silly lifecycle No script for "prepublishOnly" in "qsb-cli-dev", continuing
+54 silly lifecycle No script for "prepack" in "qsb-cli-dev", continuing
+55 verbose pack-directory packages\core
+56 verbose pack-directory packages\utils
+57 silly lifecycle No script for "prepublish" in "@qsb-cli-dev/core", continuing
+58 silly lifecycle No script for "prepublish" in "@qsb-cli-dev/utils", continuing
+59 silly lifecycle No script for "prepare" in "@qsb-cli-dev/core", continuing
+60 silly lifecycle No script for "prepare" in "@qsb-cli-dev/utils", continuing
+61 silly lifecycle No script for "prepublishOnly" in "@qsb-cli-dev/core", continuing
+62 silly lifecycle No script for "prepublishOnly" in "@qsb-cli-dev/utils", continuing
+63 silly lifecycle No script for "prepack" in "@qsb-cli-dev/core", continuing
+64 silly lifecycle No script for "prepack" in "@qsb-cli-dev/utils", continuing
+65 silly lifecycle No script for "postpack" in "@qsb-cli-dev/utils", continuing
+66 verbose packed packages\utils
+67 silly lifecycle No script for "postpack" in "@qsb-cli-dev/core", continuing
+68 verbose packed packages\core
+69 silly lifecycle No script for "postpack" in "qsb-cli-dev", continuing
+70 verbose publish @qsb-cli-dev/core
+71 verbose publish @qsb-cli-dev/utils
+72 silly FetchError: request to https://registry.npm.org/@qsb-cli-dev%2futils failed, reason: Hostname/IP does not match certificate's altnames: Host: registry.npm.org. is not in the cert's altnames: DNS:npmsecure.org, DNS:www.npmsecure.org
+72 silly     at ClientRequest.<anonymous> (C:\Users\Administrator\AppData\Roaming\nvm\v12.17.0\node_modules\lerna\node_modules\minipass-fetch\lib\index.js:97:14)
+72 silly     at ClientRequest.emit (events.js:315:20)
+72 silly     at TLSSocket.socketErrorListener (_http_client.js:426:9)
+72 silly     at TLSSocket.emit (events.js:327:22)
+72 silly     at emitErrorNT (internal/streams/destroy.js:92:8)
+72 silly     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+72 silly     at processTicksAndRejections (internal/process/task_queues.js:84:21)
+72 silly  FetchError: request to https://registry.npm.org/@qsb-cli-dev%2futils failed, reason: Hostname/IP does not match certificate's altnames: Host: registry.npm.org. is not in the cert's altnames: DNS:npmsecure.org, DNS:www.npmsecure.org
+72 silly     at ClientRequest.<anonymous> (C:\Users\Administrator\AppData\Roaming\nvm\v12.17.0\node_modules\lerna\node_modules\minipass-fetch\lib\index.js:97:14)
+72 silly     at ClientRequest.emit (events.js:315:20)
+72 silly     at TLSSocket.socketErrorListener (_http_client.js:426:9)
+72 silly     at TLSSocket.emit (events.js:327:22)
+72 silly     at emitErrorNT (internal/streams/destroy.js:92:8)
+72 silly     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+72 silly     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+72 silly   code: 'ERR_TLS_CERT_ALTNAME_INVALID',
+72 silly   reason: "Host: registry.npm.org. is not in the cert's altnames: DNS:npmsecure.org, DNS:www.npmsecure.org",
+72 silly   host: 'registry.npm.org',
+72 silly   cert: {
+72 silly     subject: [Object: null prototype] { CN: 'npmsecure.org' },
+72 silly     issuer: [Object: null prototype] {
+72 silly       C: 'GB',
+72 silly       ST: 'Greater Manchester',
+72 silly       L: 'Salford',
+72 silly       O: 'Sectigo Limited',
+72 silly       CN: 'Sectigo RSA Domain Validation Secure Server CA'
+72 silly     },
+72 silly     subjectaltname: 'DNS:npmsecure.org, DNS:www.npmsecure.org',
+72 silly     infoAccess: [Object: null prototype] {
+72 silly       'CA Issuers - URI': [Array],
+72 silly       'OCSP - URI': [Array]
+72 silly     },
+72 silly     modulus: '9EDE9AFD01944BCB4E57F814207C17BDBE8FBFF5E4FF2EB0A13E3855F7E91DB8AB80248D070AD2C1A1E117F14BF1763C5834B38733F88DBCE799924BC6C5705396E148017A1C152C5C0F5AF68D96697ED4973A5389D6EA6A1EE114CBB96B140E0376CD09BCE367BB9E8ECB446D95BCD27B6DB565B3F921BB1B6AD046BD95DB67702085B794834E77A69525020855BA79FD99E8916B8DE8AFFBB51A0FF00BCE0681E39BA859F8A93CD08BC946040E3871CD0A7758C18B675429BBB238934DC2D50D73F7D965CD8F62561423B994C12F27A1AC33BA017DB85F1C7805A845D6FA11E0B00D629650F24E237D54569650AEA1EBC1BE1C501F003B877F246685A5F067',
+72 silly     bits: 2048,
+72 silly     exponent: '0x10001',
+72 silly     pubkey: <Buffer 30 82 01 22 30 0d 06 09 2a 86 48 86 f7 0d 01 01 01 05 00 03 82 01 0f 00 30 82 01 0a 02 82 01 01 00 9e de 9a fd 01 94 4b cb 4e 57 f8 14 20 7c 17 bd be ... 244 more bytes>,
+72 silly     valid_from: 'Jan 16 00:00:00 2021 GMT',
+72 silly     valid_to: 'Jan 23 23:59:59 2022 GMT',
+72 silly     fingerprint: '8A:F4:46:B4:5F:B4:D8:9A:1C:2B:BA:E7:14:1D:90:DA:2A:36:7E:09',
+72 silly     fingerprint256: '7E:25:A1:C4:1E:A8:2C:8D:93:27:38:FA:1C:72:ED:01:D8:82:12:91:A2:BF:28:02:1D:0D:99:4B:49:AB:2C:8B',
+72 silly     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+72 silly     serialNumber: '7E2ADE78D4679C1240027F00B31B6F55',
+72 silly     raw: <Buffer 30 82 05 be 30 82 04 a6 a0 03 02 01 02 02 10 7e 2a de 78 d4 67 9c 12 40 02 7f 00 b3 1b 6f 55 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 81 8f 31 ... 1424 more bytes>,
+72 silly     issuerCertificate: {
+72 silly       subject: [Object: null prototype],
+72 silly       issuer: [Object: null prototype],
+72 silly       infoAccess: [Object: null prototype],
+72 silly       modulus: 'D67333D6D73C20D000D21745B8D63E07A23FC741EE3230C9B06CFDF49FCB12980F2D3F8D4D010C820F177F622EE9B84879FB16834EADD7322593B707BFB9503FA94CC3402AE939FFD981CA1F163241DA8026B9237A87201EE3FF209A3C95446F8775069040B4329316091008233ED2DD870F6F5D51146A0A69C54F017269CFD3934C6D04A0A31B827EB19AB9EDC59EC537789F9A0834FB562E58C4090E06645BBC37DCF19F2868A856B092A35C9FBB8898081B241DAB3085AEAFB02E9E7A9DC1C0421CE202F0EAE04AD2EF900EB4C14016F06F85424A64F7A430A0FEBF2EA3275A8E8B58B8ADC319178463ED6F56FD83CB6034C474BEE69DDBE1E4E5CA0C5F15',
+72 silly       bits: 2048,
+72 silly       exponent: '0x10001',
+72 silly       pubkey: <Buffer 30 82 01 22 30 0d 06 09 2a 86 48 86 f7 0d 01 01 01 05 00 03 82 01 0f 00 30 82 01 0a 02 82 01 01 00 d6 73 33 d6 d7 3c 20 d0 00 d2 17 45 b8 d6 3e 07 a2 ... 244 more bytes>,
+72 silly       valid_from: 'Nov  2 00:00:00 2018 GMT',
+72 silly       valid_to: 'Dec 31 23:59:59 2030 GMT',
+72 silly       fingerprint: '33:E4:E8:08:07:20:4C:2B:61:82:A3:A1:4B:59:1A:CD:25:B5:F0:DB',
+72 silly       fingerprint256: '7F:A4:FF:68:EC:04:A9:9D:75:28:D5:08:5F:94:90:7F:4D:1D:D1:C5:38:1B:AC:DC:83:2E:D5:C9:60:21:46:76',
+72 silly       ext_key_usage: [Array],
+72 silly       serialNumber: '7D5B5126B476BA11DB74160BBC530DA7',
+72 silly       raw: <Buffer 30 82 06 13 30 82 03 fb a0 03 02 01 02 02 10 7d 5b 51 26 b4 76 ba 11 db 74 16 0b bc 53 0d a7 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0c 05 00 30 81 88 31 ... 1509 more bytes>,
+72 silly       issuerCertificate: [Object]
+72 silly     }
+72 silly   },
+72 silly   errno: 'ERR_TLS_CERT_ALTNAME_INVALID',
+72 silly   type: 'system'
+72 silly }
+73 error ERR_TLS_CERT_ALTNAME_INVALID request to https://registry.npm.org/@qsb-cli-dev%2futils failed, reason: Hostname/IP does not match certificate's altnames: Host: registry.npm.org. is not in the cert's altnames: DNS:npmsecure.org, DNS:www.npmsecure.org
+74 error FetchError: request to https://registry.npm.org/@qsb-cli-dev%2futils failed, reason: Hostname/IP does not match certificate's altnames: Host: registry.npm.org. is not in the cert's altnames: DNS:npmsecure.org, DNS:www.npmsecure.org
+74 error     at ClientRequest.<anonymous> (C:\Users\Administrator\AppData\Roaming\nvm\v12.17.0\node_modules\lerna\node_modules\minipass-fetch\lib\index.js:97:14)
+74 error     at ClientRequest.emit (events.js:315:20)
+74 error     at TLSSocket.socketErrorListener (_http_client.js:426:9)
+74 error     at TLSSocket.emit (events.js:327:22)
+74 error     at emitErrorNT (internal/streams/destroy.js:92:8)
+74 error     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
