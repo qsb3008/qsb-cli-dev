@@ -3,5 +3,5 @@
 module.exports = core;
 
 function core() {
-  // version 1.0.7
+  // version 1.0.9
 }
