@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 module.exports = utils;
 
 function utils() {
-    // TODO
+  // version 1.0.5
 }
