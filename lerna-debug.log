@@ -1,0 +1,18 @@
+0 silly argv {
+0 silly argv   _: [ 'clean' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath D:\learn\qsb-cli-dev
+3 info Removing the following directories:
+4 info clean packages\core\node_modules
+4 info clean packages\utils\node_modules
+5 info clean removing D:\learn\qsb-cli-dev\packages\core\node_modules
+6 silly rimrafDir D:\learn\qsb-cli-dev\packages\core\node_modules
+7 info clean removing D:\learn\qsb-cli-dev\packages\utils\node_modules
+8 silly rimrafDir D:\learn\qsb-cli-dev\packages\utils\node_modules
+9 error Error: Command failed with exit code 1: C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\nvm\v12.17.0\node_modules\lerna\node_modules\rimraf\bin.js --no-glob D:\learn\qsb-cli-dev\packages\core\node_modules\
+9 error     at makeError (C:\Users\Administrator\AppData\Roaming\nvm\v12.17.0\node_modules\lerna\node_modules\execa\lib\error.js:59:11)
+9 error     at handlePromise (C:\Users\Administrator\AppData\Roaming\nvm\v12.17.0\node_modules\lerna\node_modules\execa\index.js:116:26)
+9 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
